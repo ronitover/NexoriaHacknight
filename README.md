@@ -208,10 +208,10 @@ Below are the UI screenshots of the PeerSkillUp platform:
    ![Login Page](images/Login.png)
 
 2. **Student Dashboard Overview:**
-   ![Student Dashboard](images/Stud dash.png)
+   ![Student Dashboard](images/Studdash.png)
 
 3. **Student Dashboard - Peer Matching Section:**
-   ![Student Dashboard - Peer Matching](images/stud dash1.png)
+   ![Student Dashboard - Peer Matching](images/studdash1.png)
 
 4. **Teacher Dashboard Overview:**
-   ![Teacher Dashboard](images/teach dash.png)
+   ![Teacher Dashboard](images/teachdash.png)
