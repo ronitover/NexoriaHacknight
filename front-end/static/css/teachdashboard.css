@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F1E7; /* Soft Ivory for background */
+    margin: 0;
+    padding: 0;
+    color: #1A1A40; /* Midnight Blue for text */
+}
+
+header {
+    background-color: #0B3D91; /* Royal Blue for header */
+    color: white; /* Header text color */
+    padding: 15px; /* Padding around header */
+    display: flex; /* Flexbox for header layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for header */
+}
+
+.logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Logo font weight */
+}
+
+nav {
+    background-color: #0B3D91; /* Nav background color */
+}
+
+nav ul {
+    list-style-type: none; /* pxove bullets */
+    padding: 0; /* pxove padding */
+    margin: 0; /* pxove margin */
+    display: flex; /* Flexbox for nav items */
+}
+
+nav ul li {
+    margin-right: 15px; /* Space between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* pxove underline from links */
+    color: white; /* Link color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+    font-size: 14px; /* Font size for nav links */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Sunrise Gold for hover */
+}
+
+.container {
+    display: flex; /* Flexbox for layout */
+    margin: 15px; /* Margin around the container */
+}
+
+aside.sidebar {
+    width: 230px; /* Width for sidebar */
+    background-color: #ffffff; /* Sidebar background color: #1A1A40; /* Midnight Blue for sidebar links */
+    padding: 6px; /* Padding for links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background 0.3s; /* Transition for hover effect */
+    font-size: 14px; /* Font size for sidebar links */
+}
+
+aside.sidebar ul li a:hover {
+    background-color: #0B3D91; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+main {
+    flex: 1; /* Allow main to take pxaining space */
+    padding: 15px; /* Padding inside main */
+    background-color: #ffffff; /* Main background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for main */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h2 {
+    color: #0B3D91; /* Heading color */
+    font-size: 18px; /* Heading size */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    padding: 8px; /* Padding around footer */
+    background-color: #0B3D91; /* Footer background color */
+    color: white; /* Footer text color */
+    position: relative; /* Position relative for fixed footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 15px; /* Margin above table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+    font-size: 14px; /* Font size for table cells */
+}
+
+th {
+    background-color: #0B3D91; /* Royal Blue for table header */
+    color: white; /* Header text color */
+}
+
+tbody tr:hover {
+    background-color: #E1F5F2; /* Light teal for row hover */
+}
+
+textarea {
+    width: 100%; /* Full width for textarea */
+    height: 100px; /* Height for textarea */
+    margin-top: 8px; /* Margin above textarea */
+    border: 1px solid #ccc; /* Border for textarea */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px; /* Padding inside textarea */
+    font-size: 12px; /* Font size for textarea */
+}
+
+button {
+    background-color: #0B3D91; /* Royal Blue for button */
+    color: white; /* Button text color */
+    border: none; /* pxove border */
+    padding: 2px 4px; /* Smaller padding for smaller button */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background 0.3s; /* Transition for hover effect */
+    font-size: 10px; /* Smaller font size for button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%; /* Full width for input fields */
+    padding: 8px; /* Padding inside input fields */
+    margin-top: 8px; /* Margin above input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Font size for input fields */
+}

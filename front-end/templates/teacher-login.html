@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/script.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="circle"></div>
+        </div>
+        <h1>Hey!</h1>
+        <h2>Login as Teacher now,</h2>
+        <input type="text" placeholder="donjoe.example" class="input-field">
+        <br>
+        <input type="password" placeholder="Password" class="input-field">
+
+        <p class="forgot-password">Forgot password? <a href="#">Reset it here.</a></p>
+
+        <button class="teachlogin-button" id="teachlogin-button">Login</button>
+    </div>
+
+    <script>
+        document.getElementById('teachlogin-button').addEventListener('click', function() {
+    window.location.href = 'teachdashboard.html'; // Redirect to dashboard.html
+});
+    </script>
+</body>
+</html>

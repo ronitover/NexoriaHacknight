@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #F8F1E7, #E1F5F2); /* Soft Ivory to a lighter shade */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo Styles */
+.logo {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #0B3D91, #1A1A40); /* Royal Blue to Midnight Blue */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0B3D91; /* Royal Blue for header */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styles */
+p {
+    color: #666; /* Keep the paragraph color for readability */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="dob"],
+input[type="current"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="dob"]:focus,
+input[type="current"]:focus {
+    border-color: #3A6351; /* Emerald Green for focus */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #3A6351; /* Emerald Green for button */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2A4B3A; /* Darker shade for hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: #1A4B3A; /* Even darker shade for active */
+}

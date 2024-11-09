@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setup</title>
+    <link rel="stylesheet" href="/static/css/sign2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h1>Setup your Account</h1>
+        <p>Fill in your details.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <input type="dob" id="dob" placeholder="Date of Birth(DD/MM/YYYY)">
+            </div>
+            <div class="form-group">
+                <input type="current" id="current" placeholder="Currently Studying">
+            </div>
+            <div class="form-group">
+                <input type="current" id="city" placeholder="City">
+            </div>
+            <button class="proceed-button" id="proceed-button">Proceed</button>
+        </form>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('proceed-button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                window.location.href = 'studdashboard.html'; // Redirect to signup2.html
+            });
+        });
+    </script>
+</body>
+</html>

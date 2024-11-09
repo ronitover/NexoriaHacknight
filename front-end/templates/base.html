@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+       /* General Styles */
+       body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("/static/images/rm373batch13-085.jpg"); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #1A1A40; /* Midnight Blue for better contrast */
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+
+    .student-btn {
+      background-color: #3A6351; /* Emerald Green for student button */
+      color: white;
+    }
+
+    .student-btn:hover {
+      background-color: #2A4B3A; /* Darker shade for hover effect */
+    }
+
+    .teacher-btn {
+      background-color: #0B3D91; /* Royal Blue for teacher button */
+      color: white;
+    }
+
+    .teacher-btn:hover {
+      background-color: #0A2E6D; /* Darker shade for hover effect */
+    }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Login</h1>
+    <p>Please select your role:</p>
+    <button class="student-btn" onclick="login('student')">Login as Student</button>
+    <button class="teacher-btn" onclick="login('teacher')">Login as Teacher</button>
+</div>
+
+<script>
+    function login(role) {
+        if (role === 'student') {
+            // Redirect to student login page
+            window.location.href = 'login.html';
+        } else if (role === 'teacher') {
+            // Redirect to teacher login page
+            window.location.href = 'teacher-login.html';
+        }
+    }
+</script>
+
+</body>
+</html>

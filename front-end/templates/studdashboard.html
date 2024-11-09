@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/static/css/studdashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Student Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#assessments">Assessments</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="#peers">Peers</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="profile" class="profile-overview">
+            <h2>Profile Overview</h2>
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="Student Profile Picture">
+                <div class="profile-info">
+                    <h3 id="student-name">John Doe</h3> <!-- Initially blank -->
+                    <p>Student ID: <span id="student-id">123456</span></p> <!-- Initially blank -->
+                    <p>Course: <span id="student-course">Computer Science</span></p> <!-- Initially blank -->
+                    <p>Performance: <span id="student-performance">85%</span></p> <!-- Initially blank -->
+                </div>
+            </div>
+        </section>
+
+        <section id="assessments" class="assessments">
+            <h2>Assessment Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td id="math-score"></td> <!-- Initially blank -->
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td id="physics-score"></td> <!-- Initially blank -->
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td id="chemistry-score"></td> <!-- Initially blank -->
+                    </tr>
+                    <tr>
+                        <td>Computer Science</td>
+                        <td id="cs-score"></td> <!-- Initially blank -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="help" class="help">
+            <h2>Subjects Needing Help</h2>
+            <ul id="subjects-needing-help">
+                <li id="help-subject-1"></li> <!-- Initially blank -->
+                <li id="help-subject-2"></li> <!-- Initially blank -->
+            </ul>
+        </section>
+
+        <section id="peers" class="peer-matching">
+            <h2>Peer Matching</h2>
+            <div class="peer-list">
+                <div class="peer-card">
+                    <h3>Jane Smith</h3>
+                    <p>Expert in: Mathematics</p>
+                    <button>Connect</button>
+                </div>
+                <div class="peer-card">
+                    <h3>Mike Johnson</h3>
+                    <p>Expert in: Chemistry</p>
+                    <button>Connect</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button class="action-button">Fetch Peers</button>
+            <button class="action-button">Update Details</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Student Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

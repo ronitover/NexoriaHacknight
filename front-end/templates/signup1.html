@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/signupstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="circle"></div>
+        </div>
+        <h1>New Here?</h1>
+        <h2>We got your back!</h2>
+        <p>Fill in your details.</p>
+
+        <input type="text" placeholder="Email" class="input-field">
+        <br>
+        <input type="text" placeholder="Username" class="input-field">
+        <br>
+        <input type="password" placeholder="password" class="input-field">
+        <br>
+        <input type="password" placeholder="Re-Enter Password" class="input-field">
+        <div>
+            <input type="checkbox" id="terms">
+            <label for="terms">By agreeing to the terms and conditions.</label>
+        </div>
+        <button class="signup-button" id="signup-button">Sign Up</button>
+        <br>
+        <p>Oops, I have my credentials, <a href="#" id="signin-link">Sign in</a></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('signup-button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                window.location.href = 'signup2.html'; // Redirect to signup2.html
+            });
+        });
+
+        document.getElementById('signin-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+    window.location.href = 'login.html'; // Redirect to signup.html
+});
+    </script>
+</body>
+</html>

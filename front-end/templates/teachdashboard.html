@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Dashboard Overview</title>
+    <link rel="stylesheet" href="/static/css/teachdashboard.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>T</span> <!-- Placeholder for logo -->
+        </div>
+        <h1>Teacher's Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#view-students">View Students</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="view-students">
+                <h2>Student Overview</h2>
+                <input type="text" id="search-bar" placeholder="Search by ID or Name" aria-label="Search Students">
+                <button id="fetch-students">Fetch Students</button>
+
+                <h3>Weak Students</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Weak Subjects</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <!-- Student data will be populated here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="feedback">
+                <h2>Feedback</h2>
+                <textarea id="feedback-text" placeholder="Provide your feedback here..."></textarea>
+                <button id="submit-feedback">Submit Feedback</button>
+            </section>
+
+            <section id="settings">
+                <h2>Settings</h2>
+                <form id="settings-form">
+                    <label for="threshold">Set Weak Student Score Threshold:</label>
+                    <input type="number" id="threshold" min="0" max="100" value="50" required>
+                    <button type="submit">Update Threshold</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Teacher's Dashboard</p>
+    </footer>
+</body>
+</html>
