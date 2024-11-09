@@ -197,10 +197,6 @@ You can use **Postman** to test the model and backend algorithms before the full
    - Inspect the response to verify the model's output and algorithm functionality.
 
 ## UI Screenshots
-*(Space reserved for UI pictures of sign-in pages, student dashboard, and teacher dashboard)*
-
-
-## UI Screenshots
 
 Below are the UI screenshots of the PeerSkillUp platform:
 
